@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex" id="main">
+        <h2>Rock Paper Scissor</h2>
+        <button id="reset_btn">RESET</button>
+        <div class="flex" id="score_container">
+            <div class="scores">
+                <span>PLAYER SCORE:</span>
+                <span id="player_score"></span>
+            </div>
+            <div class="scores">
+                <span>COMPUTER SCORE:</span>
+                <span id="computer_score"></span>
+            </div>
+        </div>
+        <div id="result">START</div>
+        <div id="graphics" class="flex">
+            <img class="icons" id="player_icon" src="" alt="">
+            <img class="icons" id="vs_icon" src="vs.png" alt="">
+            <img class="icons" id="computer_icon" src="" alt="">
+        </div>
+        <p>Choose your move, rock paper or scissor?</p>
+        <div class="flex" id="choices">
+            <div>
+                <button class="choice_btn">Rock</button>
+            </div>
+            <div>
+                <button class="choice_btn">Paper</button>
+            </div>
+            <div>
+                <button class="choice_btn">Scissor</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
